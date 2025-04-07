@@ -1,6 +1,7 @@
 ﻿int[] cards = [3, 5, 7, 8, 9];
+// int[] cards2 = new int[5000000];
 // int[] cards = {3, 5, 7, 8, 9};
-int query = 21;
+int query = 7;
 
 var result = FindCardLocation(cards, query);
 Console.WriteLine(result);
@@ -23,5 +24,5 @@ int FindCardLocation(int[] cards, int query)
             return index;
         index++; // index = index + 1;
     }
+    return -1;
 }
-
